@@ -1,0 +1,163 @@
+html,
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Karla";
+  height: 100vh;
+  background-color: #e5eff5;
+}
+
+h1,
+p,
+button {
+  margin: 0;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.price-component {
+  max-width: 45rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  box-shadow: 0px 0px 30px rgba(167, 164, 173, 0.6705882353);
+}
+.price-component .join {
+  grid-column: 1/-1;
+  background-color: white;
+  padding: 3rem 2rem;
+  border-top-right-radius: 0.5rem;
+  border-top-left-radius: 0.5rem;
+}
+.price-component .join .title {
+  color: #2ab2af;
+  font-size: 28px;
+}
+.price-component .join .day {
+  font-weight: 700;
+  color: #c0df34;
+  font-size: 21px;
+  margin: 2rem 0 1rem;
+}
+.price-component .join .join-details {
+  color: #98a6bd;
+  font-size: 19px;
+}
+.price-component .subscription {
+  background-color: #2ab2af;
+  padding: 3rem 2rem;
+  color: white;
+  border-bottom-left-radius: 0.5rem;
+}
+.price-component .subscription .subscription-title {
+  font-size: 21px;
+  font-weight: 700;
+}
+.price-component .subscription .monthly {
+  margin: 2rem 0 1rem;
+  font-size: 30px;
+  font-weight: 700;
+}
+.price-component .subscription .monthly span {
+  font-size: 18px;
+  color: #e5eff5;
+  font-weight: 400;
+  margin-left: 0.5rem;
+}
+.price-component .subscription .full-access {
+  font-size: 19px;
+}
+.price-component .subscription .cta {
+  border: none;
+  border-radius: 0.5rem;
+  margin-top: 2rem;
+  padding: 1rem;
+  width: 100%;
+  background-color: #c0df34;
+  color: #fff;
+  font-weight: 700;
+  font-size: 18px;
+  box-shadow: 0px 0px 10px #138175;
+}
+.price-component .subscription .cta:hover {
+  cursor: pointer;
+  box-shadow: 0 0 5px #4abdbd;
+  transition: all ease 500ms;
+}
+
+.whyUs {
+  padding: 3rem 6rem 2rem 2rem;
+  color: #fff;
+  background-color: #4abdbd;
+  border-bottom-right-radius: 0.5rem;
+}
+.whyUs .whyUs-title {
+  font-weight: 700;
+  font-size: 21px;
+}
+.whyUs .whyUs-details {
+  color: #e5eff5;
+  line-height: 1.5;
+  margin-top: 2rem;
+  font-size: 19px;
+  font-weight: 400;
+}
+
+@media (max-width: 720px) {
+  .price-component {
+    grid-template-columns: 1fr;
+    margin: 15rem 2rem 2rem 2rem;
+  }
+  .price-component .join {
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+  }
+  .price-component .join .title {
+    font-size: 20px;
+  }
+  .price-component .join .day {
+    font-size: 16px;
+  }
+  .price-component .join .join-details {
+    font-size: 13px;
+    line-height: 1.5;
+  }
+  .price-component .subscription {
+    border-bottom-left-radius: 0;
+    padding: 3rem 2rem 2rem 2rem;
+  }
+  .price-component .subscription .subscription-title {
+    font-size: 16px;
+  }
+  .price-component .subscription span {
+    font-size: 12px;
+  }
+  .price-component .subscription .full-access {
+    font-size: 13px;
+  }
+  .price-component .subscription .cta {
+    font-size: 14px;
+  }
+  .price-component .whyUs {
+    border-bottom-left-radius: 0.5rem;
+  }
+  .price-component .whyUs .whyUs-title {
+    font-size: 16px;
+  }
+  .price-component .whyUs .whyUs-details {
+    font-size: 13px;
+    margin-top: 1rem;
+    padding-right: 4rem;
+  }
+  .price-component .join,
+.price-component .subscription,
+.price-component .whyUs {
+    padding: 2rem 2rem;
+  }
+}/*# sourceMappingURL=styles.css.map */

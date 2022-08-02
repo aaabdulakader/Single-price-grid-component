@@ -1,0 +1,175 @@
+// Colors
+
+$cyan: #2ab2af;
+$brightYellow: #c0df34;
+$lightGray: #e5eff5;
+$grayishBlue: #98a6bd;
+$lightCyan: #4abdbd;
+html,
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Karla";
+  height: 100vh;
+  background-color: $lightGray;
+}
+h1,
+p,
+button {
+  margin: 0;
+}
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.price-component {
+  max-width: 45rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  box-shadow: 0px 0px 30px #a7a4adab;
+
+  // Join Community
+  .join {
+    grid-column: 1/-1;
+    background-color: white;
+    padding: 3rem 2rem;
+    border-top-right-radius: 0.5rem;
+    border-top-left-radius: 0.5rem;
+
+    .title {
+      color: $cyan;
+      font-size: 28px;
+    }
+    .day {
+      font-weight: 700;
+      color: $brightYellow;
+      font-size: 21px;
+      margin: 2rem 0 1rem;
+    }
+    .join-details {
+      color: $grayishBlue;
+      font-size: 19px;
+    }
+  }
+  //   Monthly Subscription
+
+  .subscription {
+    background-color: $cyan;
+    padding: 3rem 2rem;
+    color: white;
+    border-bottom-left-radius: 0.5rem;
+
+    .subscription-title {
+      font-size: 21px;
+      font-weight: 700;
+    }
+    .monthly {
+      margin: 2rem 0 1rem;
+      font-size: 30px;
+      font-weight: 700;
+
+      span {
+        font-size: 18px;
+        color: $lightGray;
+        font-weight: 400;
+        margin-left: 0.5rem;
+      }
+    }
+    .full-access {
+      font-size: 19px;
+    }
+    .cta {
+      border: none;
+      border-radius: 0.5rem;
+      margin-top: 2rem;
+      padding: 1rem;
+      width: 100%;
+      background-color: $brightYellow;
+      color: #fff;
+      font-weight: 700;
+      font-size: 18px;
+      box-shadow: 0px 0px 10px #138175;
+    }
+    .cta:hover {
+      cursor: pointer;
+      box-shadow: 0 0 5px #4abdbd;
+      transition: all ease 500ms;
+    }
+  }
+}
+//   Why Us
+.whyUs {
+  padding: 3rem 6rem 2rem 2rem;
+  color: #fff;
+  background-color: #4abdbd;
+  border-bottom-right-radius: 0.5rem;
+  .whyUs-title {
+    font-weight: 700;
+    font-size: 21px;
+  }
+  .whyUs-details {
+    color: $lightGray;
+    line-height: 1.5;
+    margin-top: 2rem;
+    font-size: 19px;
+    font-weight: 400;
+  }
+}
+// Mobile
+
+@media (max-width: 720px) {
+  .price-component {
+    grid-template-columns: 1fr;
+    margin: 15rem 2rem 2rem 2rem;
+    .join {
+      border-top-left-radius: 0.5rem;
+      border-top-right-radius: 0.5rem;
+      .title {
+        font-size: 20px;
+      }
+      .day {
+        font-size: 16px;
+      }
+      .join-details {
+        font-size: 13px;
+        line-height: 1.5;
+      }
+    }
+    .subscription {
+      border-bottom-left-radius: 0;
+      padding: 3rem 2rem 2rem 2rem;
+      .subscription-title {
+        font-size: 16px;
+      }
+      span {
+        font-size: 12px;
+      }
+      .full-access {
+        font-size: 13px;
+      }
+      .cta {
+        font-size: 14px;
+      }
+    }
+    .whyUs {
+      border-bottom-left-radius: 0.5rem;
+      .whyUs-title {
+        font-size: 16px;
+      }
+      .whyUs-details {
+        font-size: 13px;
+        margin-top: 1rem;
+        padding-right: 4rem;
+      }
+    }
+    .join,
+    .subscription,
+    .whyUs {
+      padding: 2rem 2rem;
+    }
+  }
+}
